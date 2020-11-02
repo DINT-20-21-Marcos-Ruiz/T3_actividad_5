@@ -13,27 +13,72 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBox Grid.Column="0" Grid.Row="0"  Grid.RowSpan="2" Grid.ColumnSpan="3" IsReadOnly="True" IsHitTestVisible="False" BorderBrush="Black" Margin="0,0,0,10"/>
-        <Viewbox Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Left">
-            <Button Content="1"  BorderBrush="Black" BorderThickness="0.3" Width="30"  />
-        </Viewbox>
-        <Viewbox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" >
-            <Button Content="2"  BorderBrush="Black" BorderThickness="0.3" Width="30"/>
-        </Viewbox>
-        <Viewbox Grid.Column="2" Grid.Row="2"  HorizontalAlignment="Right" >
-            <Button Content="3"  BorderBrush="Black" BorderThickness="0.3" Width="30"/>
-        </Viewbox>
-        <Viewbox Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left">
-            <Button Content="4"  BorderBrush="Black" BorderThickness="0.3" Width="30"/>
-        </Viewbox>
+        <Border Grid.Column="0" Grid.Row="0"  Grid.RowSpan="2" Grid.ColumnSpan="3" BorderBrush="Black" BorderThickness="1" Margin="0,0,0,10">
+            <Viewbox  HorizontalAlignment="Right">
+                <TextBox x:Name="pantalla_TextBox"  IsReadOnly="True" IsHitTestVisible="False" BorderThickness="0" Margin="0,0,0,10" TextAlignment="Right" FontSize="120" />
+            </Viewbox>
+        </Border>
         
         
+        <Button x:Name="uno_Button" Grid.Row="2" Grid.Column="0" Tag="1"   Margin="0,0,5,7.5" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="1"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="cuatro_Button" Grid.Row="3" Grid.Column="0" Tag="4"   Margin="0,0,5,7.5" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="4"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="siete_Button" Grid.Row="4" Grid.Column="0" Tag="7"   Margin="0,0,5,7.5"  Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="7"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="dos_Button" Grid.Row="2" Grid.Column="1" Tag="2"  Margin="2.5,0,2.5,7.5"  Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="2"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="cinco_Button" Grid.Row="3" Grid.Column="1" Tag="5"  Margin="2.5,0,2.5,7.5"  Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="5"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="ocho_Button" Grid.Row="4" Grid.Column="1" Tag="8"  Margin="2.5,0,2.5,7.5"  Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="8"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="tres_Button" Grid.Row="2" Grid.Column="3" Tag="3"  Margin="5,0,0,7.5"  Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="3"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="seis_Button" Grid.Row="3" Grid.Column="3" Tag="6"   Margin="5,0,0,7.5"  Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="6"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="nueve_Button" Grid.Row="4" Grid.Column="3"  Tag="9"  Margin="5,0,0,7.5"  Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="9"/>
+            </Viewbox>
+        </Button>
+
+        <Button x:Name="cero_Button" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Tag="0"  Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="0"/>
+            </Viewbox>
+        </Button>
+        
+
     </Grid>
 </Window>

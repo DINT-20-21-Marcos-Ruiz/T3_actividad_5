@@ -23,6 +23,16 @@ namespace T3_actividad_5
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+    
+            pantalla_TextBox.Text += (sender as Button).Tag.ToString();
+            
         }
     }
 }
