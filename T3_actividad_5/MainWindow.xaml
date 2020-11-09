@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:T3_actividad_5"
         mc:Ignorable="d"
-        Title="Calculadora" Height="544.186" Width="449.999" Icon="calc.ico">
+        Title="Calculadora" Height="544.186" Width="449.999" MinHeight="350" MinWidth="300" Icon="calc.ico">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
